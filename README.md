@@ -1,22 +1,44 @@
 # MATLAB Neural Network
-A second (and more successful) attempt to build a Neural Network from scratch on MATLAB. To see the first attempt (not recommended) check the folder [`old_firstattempt`](/old_firstattempt) on this repository.
 
-The objective of this project is learning about the basic work principles of Neural Networks and Machine Learning. This project was made using concepts from the Intermediate Mathematical Modeling (MA1029) class taken on March 2022 at the Tecnologico de Monterrey, in Monterrey, Mexico. Another great support resource for this project was the [Neural Network YouTube series](https://youtube.com/playlist?list=PL-Ogd76BhmcB9OjPucsnc2-piEE96jJDQ&si=unqUJHm6ifEYXdXz) by Dot CSV.
+A neural network implementation built from scratch in MATLAB to better understand the mathematical and computational foundations of machine learning.
 
-## File Description
-pending...
+This project represents a second, improved iteration of my work on neural networks. The original version is still available in the [`old_firstattempt`](/old_firstattempt) folder for reference, but this version reflects a more structured and successful approach.
 
-## Development Log
-In case I want to revisit this repository and don't fully understand my code or the concepts used, this is a log of my thought process during the development of this project.
+## Project Objective
 
-To avoid the error made in my first attempt, of trying to start too big, and then getting lost in the complexity and lack of organization and documentation of my code, I decided to start small this time. My first objective was to understand the basic properties and structure of a Neural Network and develop a method of visualizing the results. This can be seen in the script [`Manually_Defined_Neural_Network_Visualization.m`](/Manually_Defined_Neural_Network_Visualization.m), where I define a 1 layer neural network to perform the classification of 4 sets of points in 2 groups.
+The goal of this project was to develop a deeper understanding of how neural networks work internally, without relying on high-level machine learning libraries or frameworks. By implementing the core components manually in MATLAB, this project explores concepts such as:
 
-After understanding neural networks and forward propagation, the next logical step into developing a system that is capable of learning is understanding backpropagation. To optimize a scalar function $f(x_1,x_2,...,x_n)$ to a local minimum we can use gradient descent, which consists in finding the direction on which the function increases more quickly (the gradient $\Delta f$) and move (change the inputs) in the oposite direction. In order to use this method to optimize a multiple-output function we need to find another function that evaluates this outputs and returns a scalar value that represents whatever we want to minimize, in this case "How bad is the neural network?". This function is called a Loss or a Cost function.
+- Forward propagation
+- Activation functions
+- Error calculation
+- Backpropagation
+- Weight and bias updates
+- Basic model training workflow
 
-$$\frac{\partial C}{\partial W}$$
+## Background
 
-pending...
+This project was developed as part of my independent learning in machine learning and mathematical modeling. It applies concepts studied in the **Intermediate Mathematical Modeling (MA1029)** course at **Tecnológico de Monterrey**, taken in March 2022 in Monterrey, Mexico.
 
-## Planned Changes / Features
+Additional guidance and conceptual support came from the [Neural Network YouTube series](https://youtube.com/playlist?list=PL-Ogd76BhmcB9OjPucsnc2-piEE96jJDQ&si=unqUJHm6ifEYXdXz) by Dot CSV.
 
-pending...
+## Why MATLAB?
+
+MATLAB was used because of its strong support for matrix operations, numerical computing, and visualization. These features make it a useful environment for understanding the mathematical operations behind neural networks.
+
+## What I Learned
+
+Through this project, I strengthened my understanding of:
+
+- The mathematical structure of neural networks
+- Matrix-based computation
+- Gradient-based learning
+- The relationship between theory and implementation
+- Debugging and improving numerical algorithms
+
+## Repository Notes
+
+The folder [`old_firstattempt`](/old_firstattempt) contains my first attempt at building a neural network. While it is not the recommended version to review, I kept it in the repository to show the progression of the project and the improvements made over time.
+
+## Status
+
+This project is primarily educational and serves as a demonstration of my interest in machine learning, mathematical modeling, and building algorithms from first principles.
